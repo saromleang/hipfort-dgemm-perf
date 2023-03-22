@@ -37,8 +37,8 @@ $> ./hip_dgemm.x 16000 14000 16000 10 T N
 Time(s):         14.361
 GFLOP/s:       4991.351
 
-$> ./hip_dgemm.x 16000 14000 16000 10 T N
+$> ./hip_dgemm.x 16000 14000 16000 10 T T
  Performing 10 repetitions of 16000 * 14000 by 14000 * 16000
-Time(s):         14.338
-GFLOP/s:       4999.196
+Time(s):         24.744
+GFLOP/s:       2896.909
 ```
