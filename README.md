@@ -22,8 +22,23 @@ For example:
 # Sample output for CCE 14.0.3 and ROCM 5.2 on MI250X
 
 ```
-$ ./hip_dgemm.x  16000 14000 16000 10 T T
+$> ./hip_dgemm.x 16000 14000 16000 10 N N
  Performing 10 repetitions of 16000 * 14000 by 14000 * 16000
-Time(s):         24.741
-GFLOP/s:       2897.188
+Time(s):          3.421
+GFLOP/s:      20955.521
+
+$> ./hip_dgemm.x 16000 14000 16000 10 N T
+ Performing 10 repetitions of 16000 * 14000 by 14000 * 16000
+Time(s):          1.811
+GFLOP/s:      39587.822
+
+$> ./hip_dgemm.x 16000 14000 16000 10 T N
+ Performing 10 repetitions of 16000 * 14000 by 14000 * 16000
+Time(s):         14.361
+GFLOP/s:       4991.351
+
+$> ./hip_dgemm.x 16000 14000 16000 10 T N
+ Performing 10 repetitions of 16000 * 14000 by 14000 * 16000
+Time(s):         14.338
+GFLOP/s:       4999.196
 ```
