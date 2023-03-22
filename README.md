@@ -1,10 +1,16 @@
 # hipfort-dgemm-perf
 Tool to measure HIPBLAS DGEMM performance via HIPFORT
 
+# Prerequisites
+
+HIPFORT: See https://code.ornl.gov/t4p/build_hipfort
+
 # How to build
 
-`export HIPFORT=/path/to/hipfort`
-`make`
+```
+export HIPFORT=/path/to/hipfort
+make
+```
 
 # How to execute
 
